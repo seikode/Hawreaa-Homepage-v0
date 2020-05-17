@@ -172,7 +172,7 @@ header #logo {
   padding: 20px 20px 20px 60px; /*上、右、下、左への見出し内の余白*/
   color: #fff; /*文字色*/
   background: #74634b; /*背景色（古いブラウザ用）*/
-  background: #74634b url(../images/logo.jpg) no-repeat 20px center / 20px; /*背景色、背景画像の読み込み。左から20pxの場所に配置。画像の幅を25pxに。*/
+  background: #74634b url(../images/arrow2.png) no-repeat 20px center / 25px; /*背景色、背景画像の読み込み。左から20pxの場所に配置。画像の幅。*/
   border-radius: 10px; /*角丸のサイズ*/
 }
 /*mainコンテンツのh3タグ設定*/
@@ -538,7 +538,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
   animation-name: scroll; /*上のアニメーションで指定しているkeyframesの名前（scroll）*/
   animation-duration: 0.5s; /*アニメーションの実行時間*/
   animation-fill-mode: forwards; /*アニメーションの完了後、最後のキーフレームを維持する*/
-  border-radius: 50%;
+  border-radius: 0, 0, 50%, 50%;
   border: 3px solid #74634b; /*枠線の幅、線種、色*/
   background: #fff; /*背景色（古いブラウザ用）*/
   background: rgba(
@@ -551,6 +551,12 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
 /*マウスオン時*/
 body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
   background: #fff;
+}
+
+.pagetop-title {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
 }
 
 /*pdfアイコン
