@@ -532,7 +532,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a {
   display: block;
   z-index: 100;
   position: fixed;
-  width: 100px; /*幅*/
+  width: 70px; /*幅*/
   bottom: 55px; /*下からの配置場所指定*/
   right: 3%; /*右からの配置場所指定*/
   animation-name: scroll; /*上のアニメーションで指定しているkeyframesの名前（scroll）*/
@@ -557,6 +557,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
   display: flex;
   justify-content: center;
   margin-top: -20px;
+  font-size: 15px;
 }
 
 /*pdfアイコン
